@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 
+<html>
 <head>
     <title>GDCP JT 2022 - Jannis Zeller</title>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 
-<body>
-    <div class="page">
+<body class="dark">
+
+    <div class="head">
+        <button onclick="switch_mode()" class="switch">Dunkler / Heller Modus</button>
+    </div>
+
+    <div class="page"> 
+
         <h1>Ergänzendes Material zu meinem Beitrag zur GDCP JT 2022 in Aachen</h1>
+
         <p>Hallo zusammen, danke für Ihr Interesse! Ich bin <a href="https://www.researchgate.net/profile/Jannis-Zeller">Jannis Zeller</a> von der RWTH Aachen und habe hier ergänzendes Material zu meinen Beitrag zur GDCP Jahrestagung 2022 in Aachen hochgeladen.</p>
 
         <ul>
-            <li><a href="./source/dropAnd0_socialScaled_5Means_Netzplot.html">Interaktiver Radar-Plot der Cluster-Zentren</a></li>
+
+            <li><a href="./source/dropAnd0_socialScaled_5Means_Netzplot.html" target="_blank"><b>Interaktiver Radar-Plot der Cluster-Zentren</b></a>. Klicken Sie herum, man kann einiges genauer anschauen!</li>
+
+            <li>
+                <b>Zweidimensionale Visualisierung der Cluster.</b> Genutzt wurde eine "Principal Component Analysis". Die erste dimension des reduzierten Parameterraumes hängt sehr stark mit dem Gesamtscore zusammen.
+                <img src="./images/dropAnd0_socialScaled_5Means_pcaVisualization.png" class="centerimg">
+            </li>
+
+            <li> 
+                <b>Zusammenhang zwischen Clustern und Item-Response-Niveaus.</b> Aus dem Datensatz lässt sich mithilfe einer theoretischen Modellierung der Komplexität der Testitems ein Niveaumodell mit 3 Stufen ableiten. Dies lässt sich durch die folgende Wright Map visualisieren:
+                <img src="./images/Komplexitaetsanalyse_Wright_Map.png" class="centerimg">
+            
+            </li>
+            
             <li> <a href="./codeparts/test.html"> Testnotebook</a> </li>
+
         </ul>
+
+
     </div>
+
+    <script>
+        function switch_mode() {
+            var doc = document.body;
+            doc.classList.toggle("dark")
+            console.log(doc.classList);
+        }
+    </script>
+
 </body>
+</html>
