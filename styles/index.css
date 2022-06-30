@@ -4,6 +4,7 @@ body {
     line-height: 1.15;
     background-color: #FFFFFF;
     color: #000000;
+    transition: background-color 1s, color 1s;
 }
 
 li {
@@ -13,18 +14,19 @@ li {
 .dark {
     background-color: #303030;
     color: #FFFFFF;
+    transition: background-color 1s, color 1s;
   }
 
 .dark a:link {
-    color: #6bd0ff
+    color: #6bd0ff;
 }
 
 .dark a:visited {
-    color: #d06bff
+    color: #d06bff;
 }
 
 .dark a:active {
-    color: #ff6b93
+    color: #ff6b93;
 }
 
 .centerimg {
@@ -61,7 +63,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* text-align: center; */
+    transition: background-color 1s, color 1s;
 }
 
 .dark .head {
