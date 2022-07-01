@@ -5,6 +5,7 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     transition: background-color 1s, color 1s;
+    transition: font-size 0.5s;
 }
 
 li {
@@ -34,9 +35,10 @@ li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5em;
-    width: 60%;
+    width: 75%;
     background-color: #FFFFFF;
     border: 2px solid black;
+    transition: width 0.5s;
 }
 
 .dark .centerimg {
@@ -64,6 +66,7 @@ li {
     justify-content: center;
     align-items: center;
     transition: background-color 1s, color 1s;
+    transition: top 0.5s;
 }
 
 .dark .head {
@@ -91,8 +94,7 @@ li {
     }
 
     .head {
-        top: auto;
-        bottom: 0;
+        top: calc(100% - 2em);
     }
 
     .centerimg {
