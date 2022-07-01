@@ -1,6 +1,6 @@
 body {
     font-family: Calibri, Helvetica, sans-serif;
-    font-size: small;
+    font-size: medium;
     line-height: 1.15;
     background-color: #FFFFFF;
     color: #000000;
@@ -93,5 +93,9 @@ li {
     .head {
         top: auto;
         bottom: 0;
+    }
+
+    .centerimg {
+        width: 90%;
     }
 }
