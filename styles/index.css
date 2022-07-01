@@ -11,6 +11,10 @@ li {
     margin-top: 0.5em;
 }
 
+ul {
+    transition: padding 0.5s;
+}
+
 .dark {
     background-color: #303030;
     color: #FFFFFF;
@@ -46,7 +50,7 @@ li {
 
 .page {
     margin-top: 3em;
-    margin-bottom: auto;
+    margin-bottom: 10%;
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -98,4 +102,8 @@ li {
     .centerimg {
         width: 90%;
     }
+
+    ul {
+        padding-left: 1em;
+      }
 }
