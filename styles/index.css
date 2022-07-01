@@ -1,6 +1,6 @@
 body {
     font-family: Calibri, Helvetica, sans-serif;
-    font-size: larger;
+    font-size: small;
     line-height: 1.15;
     background-color: #FFFFFF;
     color: #000000;
@@ -34,7 +34,7 @@ li {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5em;
-    width: 90%;
+    width: 60%;
     background-color: #FFFFFF;
     border: 2px solid black;
 }
