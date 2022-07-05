@@ -85,10 +85,30 @@ ul {
 .dark .switch {
     color: #FFFFFF;
     border-color: #FFFFFF;
-    background-color: #424242;
+    background-color: #424242; /*424242*/
 }
 
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 0.5em;
+  }
 
+.centertable {  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    border-color: #000000;
+    background-color: #FAFAFA;
+    box-shadow: 0px 0px 10px #424242;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.dark .centertable {
+    background-color: #424242;
+    box-shadow: 0px 0px 10px black;
+    border-color: #FFFFFF;
+}
 
 @media screen and (max-width: 600px) {
     body {
